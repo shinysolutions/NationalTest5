@@ -1,0 +1,952 @@
+
+
+<!doctype html>
+<html id="ctl00_Html1" lang="no">
+<head id="ctl00_Head1">
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+        <meta charset="utf-8" />
+        <meta charset="ISO-8859-1" />
+        <meta http-equiv="Expires" content="0">
+        <meta name="description" content="Skoleporten er Utdanningsdirektoratets nettjeneste der skoler og skoleeiere finner relevante og pålitelige data om grunnopplæringen." />
+        <meta name="viewport" content="width=device-width" />
+        <meta name="WebPartPageExpansion" content="full">
+
+        <!--[if IE]>
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+    <![endif]-->
+
+        <script type="text/javascript" src="/bundles/js/skoleporten?v=d36O8uzZx8xk6djdcGOc-JkWI6K2_8ZoXlXbDUEEX1M1"></script>
+<script type="text/javascript" src="/bundles/js/charting/highcharts?v=FtrqJwS2Dw1xEyWuy5V11wCwizgaJWkKnnPcNdB-U6M1"></script>
+<script type="text/javascript" src="/bundles/js/charting?v=nBi9SwsM3qgGMRn0K4xYGguoIF4cSqkNeAQp8wpcsTk1"></script>
+<script type="text/javascript" src="/bundles/js/standardrapport?v=Oi0aqoqy567lEcwz0lqtvEsWIkTKokoLmUH2jNJ6Ijo1"></script>
+<link href="/bundles/css/skoleporten?v=Dx1WtpmRDi5XgH_mvqNri61joy1GjdPCrp-rj5m9yek1" rel="stylesheet"/>
+
+
+
+
+        <link rel="icon" type="image/ico" href="/favicon.ico" />
+    
+
+<script type="text/javascript">
+            var BugHerdConfig = {
+                feedback: {
+                    tab_text: "Gi en tilbakemelding",
+                    option_title_text: "Velg et alternativ",
+                    option_pin_text: "Jeg har en tilbakemelding om et spesifikt punkt på denne siden.",
+                    option_site_text: "Jeg har en generell tilbakemelding om siden som en helhet.",
+                    feedback_entry_placeholder: "Skriv din tilbakemelding her",
+                    feedback_email_placeholder: "Din email adresse",
+                    feedback_submit_text: "Send tilbakemelding",
+                    confirm_success_text: "Din tilbakemelding ble sendt.",
+                    confirm_loading_text: "Sender tilbakemelding...",
+                    confirm_close_text: "Lukk",
+                    confirm_error_text: "Sending av tilbakemelding mislyktes.",
+                    confirm_retry_text: "Prøv på nytt",
+                    confirm_extension_text: "Visste du at du kan sende et skjermbilde med din feilrapport?",
+                    confirm_extension_link_text: "Mer informasjon."
+                }
+            };
+            (function (d, t) {
+                var bh = d.createElement(t), s = d.getElementsByTagName(t)[0];
+                bh.type = 'text/javascript';
+                bh.src = '//www.bugherd.com/sidebarv2.js?apikey=8tnxsw0g4oxx719gqn5zpg';
+                s.parentNode.insertBefore(bh, s);
+            })(document, 'script');
+</script>
+
+
+    <link href="/bundles/css/LeftSideBar?v=VDm0fweq6Mt3RPBct1lnpi0BayPSOhGQtFNK9mWI50U1" rel="stylesheet"/>
+
+<title>
+	
+    Udir.no - Skoleporten
+     - Nasjonale prøver 5. trinn - Åkra ungdomsskole
+</title></head>
+<body>
+    <link media="print" rel="stylesheet" href="/bundles/css/skoleporten/print?v=vduZwmkXpsgCVX6sUFvJQBwl37aBGjzvYhzVcH9E0Oc1" />
+
+    
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MQZPB6"
+                  height="0" width="0" style="display: none; visibility: hidden"></iframe></noscript>
+<script> (function(w, d, s, l, i) {
+    w[l] = w[l] || [];
+    w[l].push({
+        'gtm.start':
+            new Date().getTime(),
+        event: 'gtm.js'
+    });
+    var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+    j.async = true;
+    j.src =
+        '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+    f.parentNode.insertBefore(j, f);
+})(window, document, 'script', 'dataLayer', 'GTM-MQZPB6'); </script>
+<!-- End Google Tag Manager -->
+    <form method="post" action="aakra-ungdomsskole?enhetsid=975275175&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1" id="aspnetForm">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="IRJ17zO38OHTCfaAjnWSn7caxEI2D19lV8P6p8r9H2L8eGDhngdw4n0y5iLEPU7kP+0u5BN2D8WxYbYmix6lhSmpOxm449+V4Uvgak0dE8rSgNdFLsuxCcLHJ4PeHvbskzZNB4b2a9BOtZ2dwM4dUJ6fWcS2Mq7RUCaFBNTElXnxEDwBOBymWHOtNv5OQ047mvF9KI3IA+dAsK4tV9uqGNTaPMVVOvxf+E2X79aE0QpYVO/jZcFz0zABErR85h/3/rRBu9HhUfy9Mww61X4dD79gOoezEHO0V8zLGSaUY2eEfdSvgkJYLmtbpqR5kGImROHxwsID0ge9uoM6NUJRW+A1vUMVSABY4To1eB7uThvZ8E5y++KiI+qaGz7HQWoGhDd010WYM9RzKZBdqPZcMxt1W1IYijM5YRisviwgAsxCw7Ypky45lxODAwSCO3w+b5dOzQ==" />
+
+
+<script src="/ScriptResource.axd?d=uHIkleVeDJf4xS50Krz-yNf90ni6BF7M0NtXLq7PLmcu0pbDMLiE_3qwVXgG6UvYjuZsOKzOg3Cw7y-kcRWolOGkbi-76X6_R--T1NDo1nOqU_OkCOO6GEu635cXHJS_84cID00xGyN-kSvaEfk3_e5FSjY1&amp;t=ffffffff805766b3" type="text/javascript"></script>
+        <div id="browserNotSupported" style="display: none" class="topMessageBanner incompatibleBrowserMessageBanner">
+        </div>
+        
+
+        
+
+        <div class="accessibility" id="skipLinks">
+            <a href="#mainContentBookmark">Hopp til hovedinnhold</a>
+        </div>
+
+        <header class="pageHeader">
+            <div class="pageContentArea">
+
+                <div class="logInArea">
+                    
+    <a href="/ulh.ashx?spid=e04bb221-6c73-41f8-ad89-99bb011bd5a5&amp;action=1" class="paloggetbruker" id="logoutLink">Logg inn</a>
+
+
+                </div>
+
+                <div class="skoleportenLogo">
+                    <a href="/">
+                        <span class="firstPart">Skole</span><span class="secondPart">porten</span>
+                    </a>
+                </div>
+
+                <div class="links">
+                    
+
+<ul class="supportMenu">
+    <li>
+        <a id="ctl00_ToppMenyHoyre1_KontaktLink" href="http://www.udir.no/Stottemeny/Om-direktoratet/Kontaktinformasjon/" target="_blank">Kontakt</a>
+    </li>
+    <li>
+        <a href="../../../../Kalender/kalender.aspx">Kalender</a>
+    </li>
+    <li>
+        <a href="../../../../hjelp/">Hjelp</a>
+    </li>
+    <li>
+        <a href="../../../../omskoleporten/">Om Skoleporten</a>
+    </li>
+    
+    
+    
+</ul>
+
+
+                    <a href="http://www.udir.no/">
+                        <img alt="Skoleporten" src="../../../../content/images/udir-logo.jpg" class="udirLogo" />
+                    </a>
+                </div>
+
+                <div class="clearfix"></div>
+
+            </div>
+        </header>
+
+        
+        <div id="megamenusearch" class="pageContentArea">
+            <div class="enhetsearch">
+    <button type="button" title="Søk skole/kommune/fylke/opplæringskontor" onclick="return false;">
+        <i class="fa fa-search"></i>
+    </button>
+    <input type="text" name="sokestreng" maxlength="100" autocomplete="off"/>
+    <ul class="customAutocomplete"></ul>
+</div>
+<script type="text/javascript">
+    $(function () {
+        var settings = {
+            container: $("#megamenusearch"),
+            numberOfResults: 10,
+            lastPageUrl: 'http://skoleporten.udir.no/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/aakra-ungdomsskole?enhetsid=975275175&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1',
+            enhetSearchApi: "/api/Enhet/GetEnheterForGlobalSearch",
+            enhetSearchUrlApi: "/api/Enhet/GetGlobalSearchUrl",
+            displaySearchButton: true,
+            charMin: 2,
+            delay: 300,
+            placeholderText: "Søk skole/kommune/fylke/opplæringskontor",
+            hideExtendedSearchOptions: false
+        };
+
+        skoleporten.enhetsearch.initializeEnhetSearch(settings);
+    });
+</script>
+
+        </div>
+        <nav class="megamenu">
+    <div class="firstLevelBar">
+        <ul class="firstLevel clearfix pageContentArea">
+                <li class="selected triangle">
+                        <span tabindex="0" class="normal">
+                            Grunnskole
+                            <i class="fa fa-angle-down"></i>
+                        </span>
+
+                </li>
+                <li>
+                        <span tabindex="0" class="normal">
+                            Videregående skole
+                            <i class="fa fa-angle-down"></i>
+                        </span>
+
+                </li>
+                <li>
+                        <span tabindex="0" class="normal">
+                            Fag- og yrkesopplæring
+                            <i class="fa fa-angle-down"></i>
+                        </span>
+
+                </li>
+                <li>
+                        <span tabindex="0" class="normal">
+                            Verktøy
+                            <i class="fa fa-angle-down"></i>
+                        </span>
+
+                </li>
+        </ul>
+    </div>
+
+        <div class="omraden" style="display: none;">
+                <ul class="secondLevel clearfix pageContentArea">
+
+                        <li>
+                                <div class="linkInnholdsomradeContainer">
+                                <a class="linkInnholdsomrade normal secondLevelSubmeny">Oversikt</a>
+                                </div>
+                                <ul class="thirdLevel verticalList">
+                                        <li>
+                                            <a class="normal" href="/oversikt/oversikt?enhetsid=975275175&amp;skoletypemenuid=0">Her finner du tall og indikatorer fra utvalgte områder</a>
+
+                                        </li>
+                                </ul>
+                        </li>
+                        <li>
+                                <div class="linkInnholdsomradeContainer">
+                                <a class="linkInnholdsomrade normal secondLevelSubmeny">Fakta om opplæringa</a>
+                                </div>
+                                <ul class="thirdLevel verticalList">
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/grunnskole/fakta-om-opplaeringa/elevar-laerarar-skolar/aakra-ungdomsskole?enhetsid=975275175&amp;vurderingsomrade=32&amp;underomrade=36&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">Elevar, lærarar, skolar</a>
+
+                                        </li>
+                                </ul>
+                        </li>
+                        <li>
+                                <div class="linkInnholdsomradeContainer">
+                                <a class="linkInnholdsomrade normal secondLevelSubmeny">Læringsmiljø</a>
+                                </div>
+                                <ul class="thirdLevel verticalList">
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/grunnskole/laeringsmiljoe/elevundersoekelsen-2013-2015/aakra-ungdomsskole?enhetsid=975275175&amp;vurderingsomrade=6&amp;underomrade=48&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">Elevundersøkelsen 2013-2015</a>
+
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/grunnskole/laeringsmiljoe/elevundersoekelsen-2007-2012/aakra-ungdomsskole?enhetsid=975275175&amp;vurderingsomrade=6&amp;underomrade=8&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">Elevundersøkelsen 2007-2012</a>
+
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/grunnskole/laeringsmiljoe/elevundersoekelsen-deltakelse/aakra-ungdomsskole?enhetsid=975275175&amp;vurderingsomrade=6&amp;underomrade=7&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">Elevundersøkelsen - deltakelse</a>
+
+                                        </li>
+                                </ul>
+                        </li>
+                        <li>
+                                <div class="linkInnholdsomradeContainer">
+                                <a class="linkInnholdsomrade normal secondLevelSubmeny selected">Læringsresultater</a>
+                                </div>
+                                <ul class="thirdLevel verticalList">
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/grunnskole/laeringsresultater/standpunktkarakterer/aakra-ungdomsskole?enhetsid=975275175&amp;vurderingsomrade=11&amp;underomrade=20&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">Standpunktkarakterer</a>
+
+                                                <div class="trinn">Trinn 10</div>
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/grunnskole/laeringsresultater/eksamenskarakterer/aakra-ungdomsskole?enhetsid=975275175&amp;vurderingsomrade=11&amp;underomrade=21&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">Eksamenskarakterer</a>
+
+                                                <div class="trinn">Trinn 10</div>
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/grunnskole/laeringsresultater/grunnskolepoeng/aakra-ungdomsskole?enhetsid=975275175&amp;vurderingsomrade=11&amp;underomrade=12&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">Grunnskolepoeng</a>
+
+                                                <div class="trinn">Trinn 10</div>
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/aakra-ungdomsskole?enhetsid=975275175&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">Nasjonale prøver 5. trinn</a>
+
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-ungdomstrinn/aakra-ungdomsskole?enhetsid=975275175&amp;vurderingsomrade=11&amp;underomrade=51&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">Nasjonale prøver ungdomstrinn</a>
+
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-fritatt-og-ikke-deltatt/aakra-ungdomsskole?enhetsid=975275175&amp;vurderingsomrade=11&amp;underomrade=30&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">Nasjonale prøver - fritatt og ikke deltatt</a>
+
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn-2009-2013/aakra-ungdomsskole?enhetsid=975275175&amp;vurderingsomrade=11&amp;underomrade=28&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">Nasjonale prøver 5. trinn 2009-2013</a>
+
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-ungdomstrinn-2009-2013/aakra-ungdomsskole?enhetsid=975275175&amp;vurderingsomrade=11&amp;underomrade=29&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">Nasjonale prøver ungdomstrinn 2009-2013</a>
+
+                                        </li>
+                                </ul>
+                        </li>
+                        <li>
+                                <div class="linkInnholdsomradeContainer">
+                                <a class="linkInnholdsomrade normal secondLevelSubmeny">Ressurser</a>
+                                </div>
+                                <ul class="thirdLevel verticalList">
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/grunnskole/ressurser/undervisningspersonell-2/aakra-ungdomsskole?enhetsid=975275175&amp;vurderingsomrade=1&amp;underomrade=2&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">Undervisningspersonell</a>
+
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/grunnskole/ressurser/oekonomi/aakra-ungdomsskole?enhetsid=975275175&amp;vurderingsomrade=1&amp;underomrade=5&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">Økonomi</a>
+
+                                                <div class="trinn">Ikke skolenivå</div>
+                                        </li>
+                                </ul>
+                        </li>
+                        <li>
+                                <div class="linkInnholdsomradeContainer">
+                                <a class="linkInnholdsomrade normal secondLevelSubmeny">Gjennomføring</a>
+                                </div>
+                                <ul class="thirdLevel verticalList">
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/grunnskole/gjennomfoering/overgangar-52/aakra-ungdomsskole?enhetsid=975275175&amp;vurderingsomrade=37&amp;underomrade=52&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">Overgangar</a>
+
+                                                <div class="trinn">Ikke skolenivå</div>
+                                        </li>
+                                </ul>
+                        </li>
+
+                </ul>
+                <div class="skoletypetekstArea">
+                        <hr class="pageContentArea skoletypetekstSeparator" />
+                        <div class="pageContentArea">
+                            <div class="skoletypetekst">
+                                <p>* &Oslash;konomi og overganger finnes ikke p&aring; skoleniv&aring;.</p>
+
+                            </div>
+                        </div>
+                </div>
+                <ul class="secondLevel clearfix pageContentArea">
+
+                        <li>
+                                <div class="linkInnholdsomradeContainer">
+                                <a class="linkInnholdsomrade normal secondLevelSubmeny">Oversikt</a>
+                                </div>
+                                <ul class="thirdLevel verticalList">
+                                        <li>
+                                            <a class="normal" href="/oversikt/oversikt?enhetsid=00&amp;skoletypemenuid=1">Her finner du tall og indikatorer fra utvalgte områder</a>
+
+                                        </li>
+                                </ul>
+                        </li>
+                        <li>
+                                <div class="linkInnholdsomradeContainer">
+                                <a class="linkInnholdsomrade normal secondLevelSubmeny">Fakta om opplæringa</a>
+                                </div>
+                                <ul class="thirdLevel verticalList">
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/videregaaende-skole/fakta-om-opplaeringa/elevar-laerarar-skolar/nasjonalt?enhetsid=00&amp;vurderingsomrade=32&amp;underomrade=36&amp;skoletype=1&amp;skoletypemenuid=1&amp;sammenstilling=1">Elevar, lærarar, skolar</a>
+
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/videregaaende-skole/fakta-om-opplaeringa/talet-paa-elevar-fellesfag/nasjonalt?enhetsid=00&amp;vurderingsomrade=32&amp;underomrade=34&amp;skoletype=1&amp;skoletypemenuid=1&amp;sammenstilling=1">Talet på elevar fellesfag</a>
+
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/videregaaende-skole/fakta-om-opplaeringa/talet-paa-elevar-programfag/nasjonalt?enhetsid=00&amp;vurderingsomrade=32&amp;underomrade=35&amp;skoletype=1&amp;skoletypemenuid=1&amp;sammenstilling=1">Talet på elevar programfag</a>
+
+                                        </li>
+                                </ul>
+                        </li>
+                        <li>
+                                <div class="linkInnholdsomradeContainer">
+                                <a class="linkInnholdsomrade normal secondLevelSubmeny">Læringsmiljø</a>
+                                </div>
+                                <ul class="thirdLevel verticalList">
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/videregaaende-skole/laeringsmiljoe/elevundersoekelsen-2013-2015/nasjonalt?enhetsid=00&amp;vurderingsomrade=6&amp;underomrade=48&amp;skoletype=1&amp;skoletypemenuid=1&amp;sammenstilling=1">Elevundersøkelsen 2013-2015</a>
+
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/videregaaende-skole/laeringsmiljoe/elevundersoekelsen-2007-2012/nasjonalt?enhetsid=00&amp;vurderingsomrade=6&amp;underomrade=8&amp;skoletype=1&amp;skoletypemenuid=1&amp;sammenstilling=1">Elevundersøkelsen 2007-2012</a>
+
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/videregaaende-skole/laeringsmiljoe/elevundersoekelsen-deltakelse/nasjonalt?enhetsid=00&amp;vurderingsomrade=6&amp;underomrade=7&amp;skoletype=1&amp;skoletypemenuid=1&amp;sammenstilling=1">Elevundersøkelsen - deltakelse</a>
+
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/videregaaende-skole/laeringsmiljoe/laerlingundersoekelsen-avgiverskoler/nasjonalt?enhetsid=00&amp;vurderingsomrade=6&amp;underomrade=56&amp;skoletype=1&amp;skoletypemenuid=1&amp;sammenstilling=1">Lærlingundersøkelsen - avgiverskoler</a>
+
+                                        </li>
+                                </ul>
+                        </li>
+                        <li>
+                                <div class="linkInnholdsomradeContainer">
+                                <a class="linkInnholdsomrade normal secondLevelSubmeny">Læringsresultater</a>
+                                </div>
+                                <ul class="thirdLevel verticalList">
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/videregaaende-skole/laeringsresultater/standpunkt-fellesfag/nasjonalt?enhetsid=00&amp;vurderingsomrade=11&amp;underomrade=15&amp;skoletype=1&amp;skoletypemenuid=1&amp;sammenstilling=1">Standpunkt fellesfag</a>
+
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/videregaaende-skole/laeringsresultater/standpunkt-programfag/nasjonalt?enhetsid=00&amp;vurderingsomrade=11&amp;underomrade=16&amp;skoletype=1&amp;skoletypemenuid=1&amp;sammenstilling=1">Standpunkt programfag</a>
+
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/videregaaende-skole/laeringsresultater/eksamen-fellesfag/nasjonalt?enhetsid=00&amp;vurderingsomrade=11&amp;underomrade=17&amp;skoletype=1&amp;skoletypemenuid=1&amp;sammenstilling=1">Eksamen fellesfag</a>
+
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/videregaaende-skole/laeringsresultater/eksamen-programfag/nasjonalt?enhetsid=00&amp;vurderingsomrade=11&amp;underomrade=18&amp;skoletype=1&amp;skoletypemenuid=1&amp;sammenstilling=1">Eksamen programfag</a>
+
+                                        </li>
+                                </ul>
+                        </li>
+                        <li>
+                                <div class="linkInnholdsomradeContainer">
+                                <a class="linkInnholdsomrade normal secondLevelSubmeny">Ressurser</a>
+                                </div>
+                                <ul class="thirdLevel verticalList">
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/videregaaende-skole/ressurser/undervisningspersonell-4/nasjonalt?enhetsid=00&amp;vurderingsomrade=1&amp;underomrade=4&amp;skoletype=1&amp;skoletypemenuid=1&amp;sammenstilling=1">Undervisningspersonell</a>
+
+                                                <div class="trinn">Ikke skolenivå</div>
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/videregaaende-skole/ressurser/oekonomi/nasjonalt?enhetsid=00&amp;vurderingsomrade=1&amp;underomrade=5&amp;skoletype=1&amp;skoletypemenuid=1&amp;sammenstilling=1">Økonomi</a>
+
+                                                <div class="trinn">Ikke skolenivå</div>
+                                        </li>
+                                </ul>
+                        </li>
+                        <li>
+                                <div class="linkInnholdsomradeContainer">
+                                <a class="linkInnholdsomrade normal secondLevelSubmeny">Gjennomføring</a>
+                                </div>
+                                <ul class="thirdLevel verticalList">
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/videregaaende-skole/gjennomfoering/gjennomfoering/nasjonalt?enhetsid=00&amp;vurderingsomrade=37&amp;underomrade=44&amp;skoletype=1&amp;skoletypemenuid=1&amp;sammenstilling=1">Gjennomføring</a>
+
+                                                <div class="trinn">Ikke skolenivå</div>
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/videregaaende-skole/gjennomfoering/overgangar-41/nasjonalt?enhetsid=00&amp;vurderingsomrade=37&amp;underomrade=41&amp;skoletype=1&amp;skoletypemenuid=1&amp;sammenstilling=1">Overgangar</a>
+
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/videregaaende-skole/gjennomfoering/slutta/nasjonalt?enhetsid=00&amp;vurderingsomrade=37&amp;underomrade=39&amp;skoletype=1&amp;skoletypemenuid=1&amp;sammenstilling=1">Slutta</a>
+
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/videregaaende-skole/gjennomfoering/ungdom-uten-og-utenfor-videregaaende-opplaering/nasjonalt?enhetsid=00&amp;vurderingsomrade=37&amp;underomrade=61&amp;skoletype=1&amp;skoletypemenuid=1&amp;sammenstilling=1">Ungdom uten og utenfor videregående opplæring</a>
+
+                                        </li>
+                                </ul>
+                        </li>
+
+                </ul>
+                <div class="skoletypetekstArea">
+                        <hr class="pageContentArea skoletypetekstSeparator" />
+                        <div class="pageContentArea">
+                            <div class="skoletypetekst">
+                                <p><img alt="Strukturen i videregående opplæring" src="https://skoleporten.udir.no/images/udir_megameny_forklaring_05.jpg" style="height:117px; width:970px" /></p>
+
+                            </div>
+                        </div>
+                </div>
+                <ul class="secondLevel clearfix pageContentArea">
+
+                        <li>
+                                <div class="linkInnholdsomradeContainer">
+                                <a class="linkInnholdsomrade normal secondLevelSubmeny">Oversikt</a>
+                                </div>
+                                <ul class="thirdLevel verticalList">
+                                        <li>
+                                            <a class="normal" href="/oversikt/oversikt?enhetsid=00&amp;skoletypemenuid=2">Her finner du tall og indikatorer fra utvalgte områder</a>
+
+                                        </li>
+                                </ul>
+                        </li>
+                        <li>
+                                <div class="linkInnholdsomradeContainer">
+                                <a class="linkInnholdsomrade normal secondLevelSubmeny">Fakta om opplæringa</a>
+                                </div>
+                                <ul class="thirdLevel verticalList">
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/fag-og-yrkesopplaering/fakta-om-opplaeringa/laerlingar/nasjonalt?enhetsid=00&amp;vurderingsomrade=32&amp;underomrade=33&amp;skoletype=6&amp;skoletypemenuid=2&amp;sammenstilling=1">Lærlingar</a>
+
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/fag-og-yrkesopplaering/fakta-om-opplaeringa/nye-laerlingar/nasjonalt?enhetsid=00&amp;vurderingsomrade=32&amp;underomrade=47&amp;skoletype=6&amp;skoletypemenuid=2&amp;sammenstilling=1">Nye lærlingar</a>
+
+                                        </li>
+                                </ul>
+                        </li>
+                        <li>
+                                <div class="linkInnholdsomradeContainer">
+                                <a class="linkInnholdsomrade normal secondLevelSubmeny">Læringsmiljø</a>
+                                </div>
+                                <ul class="thirdLevel verticalList">
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/fag-og-yrkesopplaering/laeringsmiljoe/laerlingundersoekelsen/nasjonalt?enhetsid=00&amp;vurderingsomrade=6&amp;underomrade=54&amp;skoletype=6&amp;skoletypemenuid=2&amp;sammenstilling=1">Lærlingundersøkelsen</a>
+
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/fag-og-yrkesopplaering/laeringsmiljoe/laerlingundersoekelsen-deltakelse/nasjonalt?enhetsid=00&amp;vurderingsomrade=6&amp;underomrade=55&amp;skoletype=6&amp;skoletypemenuid=2&amp;sammenstilling=1">Lærlingundersøkelsen - deltakelse</a>
+
+                                        </li>
+                                </ul>
+                        </li>
+                        <li>
+                                <div class="linkInnholdsomradeContainer">
+                                <a class="linkInnholdsomrade normal secondLevelSubmeny">Læringsresultater</a>
+                                </div>
+                                <ul class="thirdLevel verticalList">
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/fag-og-yrkesopplaering/laeringsresultater/fag-og-svennebrev/nasjonalt?enhetsid=00&amp;vurderingsomrade=11&amp;underomrade=49&amp;skoletype=6&amp;skoletypemenuid=2&amp;sammenstilling=1">Fag- og svennebrev</a>
+
+                                        </li>
+                                </ul>
+                        </li>
+                        <li>
+                                <div class="linkInnholdsomradeContainer">
+                                <a class="linkInnholdsomrade normal secondLevelSubmeny">Gjennomføring</a>
+                                </div>
+                                <ul class="thirdLevel verticalList">
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/fag-og-yrkesopplaering/gjennomfoering/gjennomfoering-av-laeretiden/nasjonalt?enhetsid=00&amp;vurderingsomrade=37&amp;underomrade=53&amp;skoletype=6&amp;skoletypemenuid=2&amp;sammenstilling=1">Gjennomføring av læretiden</a>
+
+                                                <div class="trinn">Ikke opplæringskontor</div>
+                                        </li>
+                                </ul>
+                        </li>
+                        <li>
+                                <div class="linkInnholdsomradeContainer">
+                                <a class="linkInnholdsomrade normal secondLevelSubmeny">Sysselsetting</a>
+                                </div>
+                                <ul class="thirdLevel verticalList">
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/fag-og-yrkesopplaering/sysselsetting/sysselsetting-av-fagutdannede/nasjonalt?enhetsid=00&amp;vurderingsomrade=57&amp;underomrade=58&amp;skoletype=6&amp;skoletypemenuid=2&amp;sammenstilling=1">Sysselsetting av fagutdannede</a>
+
+                                                <div class="trinn">Ikke opplæringskontor</div>
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/fag-og-yrkesopplaering/sysselsetting/sysselsetting-av-fagutdannede-laerlinger/nasjonalt?enhetsid=00&amp;vurderingsomrade=57&amp;underomrade=59&amp;skoletype=6&amp;skoletypemenuid=2&amp;sammenstilling=1">Sysselsetting av fagutdannede - lærlinger</a>
+
+                                                <div class="trinn">Ikke opplæringskontor</div>
+                                        </li>
+                                        <li>
+                                            <a class="normal" href="/rapportvisning/fag-og-yrkesopplaering/sysselsetting/sysselsetting-av-fagutdannede-praksiskandidater/nasjonalt?enhetsid=00&amp;vurderingsomrade=57&amp;underomrade=60&amp;skoletype=6&amp;skoletypemenuid=2&amp;sammenstilling=1">Sysselsetting av fagutdannede - praksiskandidater</a>
+
+                                                <div class="trinn">Ikke opplæringskontor</div>
+                                        </li>
+                                </ul>
+                        </li>
+
+                </ul>
+                <div class="skoletypetekstArea">
+                        <hr class="pageContentArea skoletypetekstSeparator" />
+                        <div class="pageContentArea">
+                            <div class="skoletypetekst">
+                                <p><img alt="Strukturen i videregående opplæring" src="https://skoleporten.udir.no/images/udir_megameny_forklaring_05.jpg" style="height:117px; width:970px" /></p>
+
+<p><a href="http://www.udir.no/Lareplaner/Finn-utdanningsprogram/" target="_blank">Her kan du lese mer om strukturen i videreg&aring;ende oppl&aelig;ring.</a></p>
+
+                            </div>
+                        </div>
+                </div>
+                <ul class="secondLevel clearfix pageContentArea">
+
+                        <li>
+                                <div class="linkInnholdsomradeContainer">
+                                <a class="linkInnholdsomrade normal" href="/personlig/Sider/Verktoy.aspx">Oversikt</a>
+                                    <ul class="thirdLevel empty"></ul>
+                                </div>
+                        </li>
+                        <li>
+                                <div class="linkInnholdsomradeContainer">
+                                <a class="linkInnholdsomrade normal" href="http://skoleporten.udir.no/rapportbygger/">Lag din egen rapport</a>
+                                    <ul class="thirdLevel empty"></ul>
+                                </div>
+                        </li>
+
+                </ul>
+                <div class="skoletypetekstArea">
+                </div>
+        </div>
+
+</nav>
+
+
+
+
+        <div id="mainContentAreaWrapper">
+            <div class="pageContentArea pageContentAreaDecoration clearfix">
+                
+                
+                
+                
+
+                <section class="pageSideNavigation" id="pageSideNavigationId">
+                    
+    
+    <nav role="navigation" class="navigationalAreas">
+    <ul>
+
+
+
+    <li>
+
+
+<ol class="navigationArea">
+    <li>
+
+        <a class="opened" href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/nasjonalt?enhetsid=00&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+            <i class="fa fa-angle-down"></i>
+            <span>Nasjonalt: Alle fylker, kommuner og skoler</span>
+        </a>    
+    </li>
+    <li class="secondLevel">
+
+        <a class="opened" href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/rogaland-fylke?enhetsid=11&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+            <i class="fa fa-angle-down"></i>
+            <span>Rogaland fylke</span>
+        </a>    
+    </li>
+
+        <li class="thirdLevel">
+            <a class="opened" href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/karmoey-kommune?enhetsid=1149&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                <i class="fa fa-angle-down"></i>
+                <span>Karmøy kommune</span>
+            </a>    
+        </li>
+
+    <li class="container">
+
+        <div class="linkGroupHeader">
+            Grunnskoler i Karmøy kommune (25)
+        </div>
+
+        <ul class="linkGroup">
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/avaldsnes-skole?enhetsid=975275094&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Avaldsnes skole</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/boe-ungdomsskole-975274934?enhetsid=975274934&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Bø ungdomsskole</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/danielsen-ungdomsskole-karmoey-as-privat-?enhetsid=898154432&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Danielsen ungdomsskole Karmøy AS (privat)</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/eide-skole-975275159?enhetsid=975275159&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Eide skole</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/ferkingstad-skole?enhetsid=975275132&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Ferkingstad skole</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/grindhaug-skole?enhetsid=975267695&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Grindhaug skole</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/haavik-skole?enhetsid=975275027&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Håvik skole</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/kolnes-skole?enhetsid=975275019&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Kolnes skole</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/kopervik-skole?enhetsid=975275140&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Kopervik skole</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/kvalavaag-montessoriskole-as-privat-?enhetsid=996755592&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Kvalavåg Montessoriskole AS (privat)</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/mykje-skole?enhetsid=990804540&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Mykje skole</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/norheim-skole?enhetsid=975275108&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Norheim skole</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/sevland-skole?enhetsid=975275124&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Sevland skole</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/skudenes-ungdomsskole?enhetsid=975275167&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Skudenes ungdomsskole</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/skudeneshavn-skole?enhetsid=975275078&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Skudeneshavn skole</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/stangeland-ungdomsskole?enhetsid=875290282&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Stangeland ungdomsskole</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/stokkastrand-skole?enhetsid=975275000&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Stokkastrand skole</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/soerhaaland-privatskole-as-privat-?enhetsid=996725936&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Sørhåland Privatskole AS (privat)</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/torvastad-skole-og-kultursenter?enhetsid=914571251&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Torvastad skole og Kultursenter</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/veavaagen-skole?enhetsid=975274942&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Veavågen skole</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/vormedal-ungdomsskole?enhetsid=975297489&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Vormedal ungdomsskole</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/vaagen-laeringssenter?enhetsid=975320197&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Vågen Læringssenter</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/aadland-skole?enhetsid=975275043&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Ådland skole</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link " href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/aakra-skole?enhetsid=975275086&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop "></i>
+                        <span>Åkra skole</span>
+                    </a>    
+                </li>
+                <li>
+                    <a class="link selected" href="/rapportvisning/grunnskole/laeringsresultater/nasjonale-proever-5-trinn/aakra-ungdomsskole?enhetsid=975275175&amp;vurderingsomrade=11&amp;underomrade=50&amp;skoletype=0&amp;skoletypemenuid=0&amp;sammenstilling=1">
+                        <i class="fa fa-stop selected"></i>
+                        <span>Åkra ungdomsskole</span>
+                    </a>    
+                </li>
+        </ul>
+    </li>
+</ol>
+
+    </li>
+
+    </ul>
+</nav>
+
+<script>
+    $(function () {
+        skoleporten.components.linkGroupFilterer.init(13);
+        skoleporten.textResizer.init(".navigationArea a span", false);
+        skoleporten.textResizer.init(".enhetsInformasjon .enhetsnavn");
+    });
+</script>
+                    
+                </section>
+                <div class="pageMainContentArea baseContentStyles" id="mainContentBookmark">
+                    
+    
+
+<section class="standardrapport">
+        <h1>
+        <span>
+            Nasjonale prøver 5. trinn
+        </span>
+    </h1>
+
+    <div class="clearfix"></div>
+    
+<div class="enhetsInformasjon utloggetRamme">
+    <div class="enhetsInfoWrapper">
+        <div class="bildekolonne enhetsbildeWrapper">
+                <img src="/_layouts/udir/images/vaapen/skole-illustrasjon.gif" alt="Illustrasjon for en enhet" />
+        </div>
+
+        <div class="enhetContentWrapper">
+            <div class="enhetsHeadingWrapper">
+                <span class="enhetsnavn">
+                    Åkra ungdomsskole
+                </span>
+            </div>
+
+            <div class="clearfix"></div>
+
+
+                <div class="pnlEnhetsInfoDetails">
+
+                        <div class="adressekolonne block">
+                            <div class="normal">
+                                <div>
+                                    <span>Skulevegen 5</span>
+                                </div>
+                                <div>
+                                    <span>4270</span>
+                                    <span>ÅKREHAMN</span>
+                                </div>
+                                <div>
+                                    <span>Org.nr</span>&nbsp;<span>975275175</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skoleinfokolonne block">
+                            <div class="normal">
+                                <span>Offentlig skole</span>
+                            </div>
+                            <div class="normal">
+                                <span>Grunnskole</span>
+                            </div>
+                            <div class="normal">
+                                <span>8.-10. trinn</span>
+                            </div>
+                        </div>
+
+                        <div class="linkkolonne block">
+                                <p class="normal">
+                                    <a href="mailto:akrau@karmoy.kommune.no" target="_blank">Skolens e-post</a>
+                                </p>
+                                <p class="normal">
+                                    <a href="http://www.minskole.no/akrau" target="_blank">Skolens hjemmeside</a>
+                                </p>
+
+                        </div>
+
+                        <div class="skoleeierkolonne block">
+                            <div class="normal">
+                                <span>Skoleeier:</span>
+                                <span>Karmøy kommune skoleeier</span>
+                            </div>
+                            <div class="normal">
+                                <a href="http://www.karmoy.kommune.no/" target="_blank">Skoleeiers hjemmeside</a>
+                            </div>
+                        </div>
+
+                </div>
+        </div>
+    </div>
+
+    <div class="clearfix"></div>
+
+</div>
+<p>&nbsp;</p>
+
+<p style="text-align: center;"><strong>Disse tallene finnes ikke for den skolen du har valgt.</strong></p>
+
+<p>&nbsp;</p>
+
+<p style="text-align: center;"><img alt="Rapporten kan ikke vise data for valgt(e) enhet(er)" src="/content/images/ingen-data.gif" style="font-size:1.2em; height:12px; line-height:1.6em; width:12px" /></p>
+
+<p>&nbsp;</p>
+
+<p style="text-align:center">Det skyldes at skolen du har valgt ikke har det &aring;rstrinnet som tallene er publisert p&aring;.</p>
+
+<p style="text-align:center">Standpunkt- og eksamenskarakterer samt grunnskolepoeng finnes bare for grunnskoler som har 10. trinn.</p>
+</section>
+
+                </div>
+            </div>
+
+            <footer class="pageFooterArea pageContentArea">
+                <div>
+                    <div>
+                        <a class="x-small" href="http://www.udir.no/Stottemeny/Om-direktoratet/" target="_blank">
+                            <span>Om direktoratet</span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                        <span>|</span>
+                    </div>
+                    <div>
+                        <a class="x-small" href="http://www.udir.no/Stottemeny/Om-direktoratet/Kontaktinformasjon/" target="_blank">
+                            <span>Kontaktinformasjon</span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                        <span>|</span>
+                    </div>
+                    <div>
+                        <span class="x-small">Tlf: 23 30 12 00</span>
+                        <span>|</span>
+                    </div>
+                    <div>
+                        <a href="/personlig/ArtikkelVisning.aspx?ArtikkelId=73">
+                            <span class="x-small">Vi bruker informasjonskapsler - hva er det?</span>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <span class="x-small">Ansvarlig redaktør: Helge Lund </span>
+            </footer>
+        </div>
+
+
+    
+<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="6E147532" /></form>
+
+    <!-- Siden ble produsert 02.02.2016 16:40:36 av skoleporten.udir.no -->
+</body>
+</html>

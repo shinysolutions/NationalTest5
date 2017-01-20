@@ -1,0 +1,13 @@
+leaflet:
+  css: 
+    - external/leaflet.css
+    - external/PruneCluster.css 
+
+  jshead:
+    - external/leaflet.js
+    - external/PruneCluster.js
+    - external/heatmap.js
+    - external/heatmap-leaflet.js
+
+
+  
